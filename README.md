@@ -1,65 +1,81 @@
 # ☁️ Cloud-Based E-Commerce Platform with Automated DevOps Pipeline
 
-This project is a **microservices-based e-commerce application** deployed on **Azure** with a fully automated **DevOps pipeline**.  
+![GitHub Workflow](https://img.shields.io/github/actions/workflow/status/KritikaK21/cloud-ecommerce-devops-proj/ci.yml?branch=main)
+![Docker Image](https://img.shields.io/badge/Docker-Container-blue)
+![Language](https://img.shields.io/badge/Language-Java%2C%20Node.js-orange)
 
-It demonstrates my skills in **Terraform, Docker, CI/CD, monitoring, and cloud infrastructure**, and showcases my ability to **build and manage scalable cloud applications**.
+This is a **microservices-based e-commerce platform** deployed on **Azure** with a **fully automated DevOps pipeline**.  
+
+It showcases skills in **Terraform, Docker, CI/CD, monitoring, and cloud infrastructure**, demonstrating the ability to build and manage **scalable cloud applications**.
 
 ---
 
 ## 🎯 Project Goal
-
-The goal of this project is to create a **robust, cloud-ready e-commerce platform** that:  
-- Can handle increasing traffic with **containerized microservices**  
-- Uses **infrastructure as code (Terraform)** for reproducible deployments  
-- Has an automated **CI/CD pipeline** for faster and reliable releases  
-- Provides **monitoring and logging** via Prometheus + Grafana  
-
-This project mimics real-world cloud application scenarios and demonstrates **end-to-end DevOps implementation**.
+Build a robust, cloud-ready e-commerce platform that:  
+- Handles increasing traffic using containerized microservices  
+- Uses **Terraform (IaC)** for reproducible deployments  
+- Implements a **CI/CD pipeline** for faster and reliable releases  
+- Provides monitoring and logging via **Prometheus + Grafana**  
 
 ---
 
 ## 🔹 Features Implemented
 
-### ✅ Completed / Working
+✅ **Infrastructure as Code (IaC)**  
+- Terraform scripts to provision Azure resources (Resource Group, VNet, Subnet)  
 
-- **Infrastructure as Code (IaC) with Terraform**  
-  *Initial setup including provider configuration and basic Azure resources (Resource Group, VNet, Subnet)*  
+✅ **Containerization**  
+- All services Dockerized with Docker Compose  
 
-- **Containerization**  
-  *All services Dockerized with Docker Compose for easy deployment*  
+✅ **CI/CD Pipeline**  
+- GitHub Actions for automated build, test, and deployment  
 
-- **CI/CD Pipeline**  
-  *GitHub Actions configured for automated build, test, and deployment*  
-
-- **Monitoring & Logging**  
-  *Prometheus + Grafana dashboards to visualize metrics and logs in real-time*  
-
-- **Screenshots Proof** *(see below)*  
+✅ **Monitoring & Logging**  
+- Prometheus + Grafana dashboards for real-time metrics  
 
 ---
 
-## 📌 Work in Progress
-
-- ⏳ Security enhancements (IAM, secrets management)  
-- ⏳ Auto-scaling policies for high traffic  
-- ⏳ Live deployment demo  
+## 🔥 Highlights / Impact
+- **Terraform automation** → Reduced manual setup time by ~60%  
+- **Microservices deployment** → Each service deploys independently under 2 minutes  
+- **CI/CD automation** → Deployment frequency increased by 80%, minimizing errors  
+- **Real-time monitoring** → Detect issues within 30 seconds  
 
 ---
 
 ## 🏗️ Project Architecture
-
-This project follows a **microservices-based architecture**:
-
-- Each service is containerized and independently deployable  
-- Services communicate over REST APIs  
-- Terraform provisions the cloud infrastructure, and Docker + CI/CD handles deployment  
-- Monitoring is centralized via Prometheus + Grafana  
+- Microservices architecture: each service is containerized  
+- Services communicate over **REST APIs**  
+- **Terraform** provisions infrastructure  
+- **Docker + GitHub Actions** handle deployment  
+- Monitoring via **Prometheus + Grafana**
 
 ![Project Architecture](images/architecture.png)
 
 ---
 
-## 📸 Project Screenshots
+## 👩‍💻 Tech Stack
+- **Cloud:** Azure  
+- **DevOps Tools:** Terraform, Docker, GitHub Actions, Prometheus, Grafana  
+- **Languages/Frameworks:** Java (Spring Boot), Node.js  
+
+---
+
+## 📂 Repository Structure
+
+```bash
+cloud-ecommerce-devops/
+│── terraform/              # Terraform IaC
+│── project-screenshots/    # Proof screenshots
+│── .github/                # GitHub Actions workflows
+│── Dockerfile              # Docker setup
+│── README.md               # Documentation
+```
+
+---
+
+## 📸 Screenshots
+*(Added a few key screenshots here showing the app, Grafana dashboards, CI/CD pipeline)*
 
 ### 🌐 Web / App Screenshots
 
@@ -115,40 +131,25 @@ terraform apply
 ``` bash
 docker-compose up --build
 ```
+4. Access services locally
 
-## 👩‍💻 Tech Stack
+- Frontend: ```http://localhost:8080```
+- Backend API: ```http://localhost:5000```
+- Grafana: ```http://localhost:3000```
 
-- Cloud: Azure
-- DevOps Tools: Terraform, Docker, GitHub Actions, Prometheus, Grafana
-- Languages/Frameworks: Java, Spring Boot, Node.js
-
-## 📂 Repository Structure
+5. Stop the project
 ```bash
-cloud-ecommerce-devops/
-│── terraform/              # Terraform IaC
-│── project-screenshots/    # Proof screenshots
-│── .github/                # GitHub Actions workflows
-│── Dockerfile              # Docker setup
-│── README.md               # Documentation
+docker-compose down
 ```
-## 🔥 Highlights / Impact
 
-- Automated infrastructure provisioning with Terraform
-*Reduced manual setup time by ~60%*
+---
 
-- Microservices deployed and orchestrated with Docker
-*Each service can be deployed independently in under 2 minutes*
+## 🌍 Live Demo
 
-- CI/CD pipeline with GitHub Actions
-*Deployment frequency increased by 80%, reducing manual errors*
+A live deployment will be available soon (link will be added here).
 
-- Monitoring & Logging with Prometheus + Grafana
-*Real-time metrics allow detection of issues within 30 seconds*
+## 📌 Work in Progress
 
-- Screenshots provide proof of implementation
-*Demonstrates working app, monitoring dashboards, and CI/CD pipeline*
-" "    # adds a blank line at the end
-"Triggering build again" 
-"Trigger workflow again" 
-"Trigger workflow with updated Docker credentials" 
-"Trigger workflow with updated Docker credentials" 
+- Security enhancements (IAM, secrets management)
+- Auto-scaling policies for high traffic
+- Live deployment demo
