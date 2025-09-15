@@ -150,3 +150,4 @@ cloud-ecommerce-devops/
 " "    # adds a blank line at the end
 "Triggering build again" 
 "Trigger workflow again" 
+"Trigger workflow with updated Docker credentials" 
