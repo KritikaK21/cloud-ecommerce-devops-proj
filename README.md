@@ -80,38 +80,39 @@ cloud-ecommerce-devops/
 ### 🌐 Web / App Screenshots
 
 **Welcome to Nginx**  
-![Nginx Welcome Page](project-screenshots/image1.png)
+![Nginx Welcome Page](project-screenshots/azure.png)
 
 **WeaveSocks UI**  
-![WeaveSocks UI](project-screenshots/image2.png)
+![WeaveSocks UI](project-screenshots/azure%202%20clear.png)
 
 ---
 
 ### 📊 Grafana / Monitoring
 
 **Grafana / Prometheus Query Setup**  
-![Prometheus / Grafana Query](project-screenshots/image3.png)
+![Prometheus / Grafana Query](project-screenshots/azure3.png)
 
 **Grafana Login Page**  
-![Grafana Login](project-screenshots/image4.png)
+![Grafana Login](project-screenshots/azure4%20clear.png)
 
 **Grafana Dashboard - Overview**  
-![Grafana Dashboard Overview](project-screenshots/image5.png)
+![Grafana Dashboard Overview](project-screenshots/azure5.png)
 
 **Grafana Dashboard - Node Exporter**  
-![Grafana Node Exporter](project-screenshots/image6.png)
+![Grafana Node Exporter](project-screenshots/azure6.png)
 
 ---
 
 ### 💻 Code / CI-CD
 
 **Go Module Stats**  
-![Go Module Info](project-screenshots/image8.png)
+![Go Module Info](project-screenshots/azure7.png)
 
 **CI/CD Pipeline Demo**  
-![CI/CD Pipeline](project-screenshots/image9.png)
+![CI/CD Pipeline](project-screenshots/azure8.png)
 
-
+**Additional CI/CD Screenshot**  
+![CI/CD Screenshot](project-screenshots/azure9.png)
 
 ---
 
